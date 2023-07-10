@@ -1,0 +1,12 @@
+# txt syntaxの拡張機能を入れると使いやすいです
+
+#http://localhost:5000/api/notes
+
+
+# POST http://localhost:5000/api/notes HTTP/1.1
+# content-type: application/json
+
+# {
+#     "title": "あかさたな",
+#     "text": "さしすせそ"
+# }
