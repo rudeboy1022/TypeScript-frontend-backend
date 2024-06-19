@@ -1,0 +1,14 @@
+/**
+ * pxをremに変換して出力するmixin
+ * 
+ * @usage
+ * @include font-size(20px);
+*/
+
+@use 'sass:math';
+@use 'src/styles/foundations/functions/remove-unit' as *;
+
+@mixin font-size($size, $base: 16px) {
+  $rem: math.div(remove-unit($size), remove-unit($base)) * 1rem;
+  font-size: $rem;
+}

@@ -1,0 +1,49 @@
+// サイト全体で使う共通のカラー変数
+
+// brand （サイトのメインカラー）
+$color-brand-1: #f95d37 !default;
+$color-brand-1-hover: #fa7d5f !default;
+$color-brand-1-focus: #fa7d5f !default;
+$color-brand-1-disabled: #cdd9e1 !default;
+$color-brand-2: #fff3f0 !default;
+$color-brand-shadow-1: #e6d5d1 !default;
+$color-brand-shadow-2: #fedfd7 !default;
+
+// 文字
+$color-text-1: #4a4a4a !default;
+
+// フォーカス
+$color-focus: #37abf7;
+
+// エラー系
+$color-alert-1: #ff4242 !default;
+$color-alert-2: #ffefef !default;
+
+// グレー
+$color-gray-400: #bfbfbf !default;
+$color-gray-300: #9eaeb8 !default;
+$color-gray-200: #cdd9e1 !default;
+$color-gray-100: #f4f7f8 !default;
+$color-gray-000: #ffffff !default;
+
+// SNS
+$color-sns-facebook: #375b95 !default;
+$color-sns-twitter: #4baeea !default;
+$color-sns-line: #04bb00 !default;
+
+/*
+ フォームパーツ用カラー
+*/
+$color-input-main: $color-brand-1 !default; // input要素全般のメインカラー
+$color-input-border: $color-gray-200 !default; // テキストボックスなどのボーダー
+$color-input-background: #fafdff !default; // テキストボックスなどのバックグラウンド
+$color-input-text: $color-text-1 !default; // ラジオやテキストボックスなどinput要素全般の文字色
+$color-input-placeholder: #d8d8d8 !default; // プレースホルダーの文字色
+$color-input-error-1: $color-alert-1 !default; // エラー系の色（主にボーダー）
+$color-input-error-2: $color-alert-2 !default; // エラー系の色（主に背景）
+$color-input-active: $color-focus !default; //主にフォーカスが当たってる状態
+
+//disabled状態
+$color-input-text-disabled: #333333 !default; //disabled状態の文字色
+$color-input-border-disabled: $color-gray-200 !default; //disabled状態のテキストボックスなどのボーダー色
+$color-input-background-disabled: #ebf0f3 !default; //disabled状態のテキストボックスなどのバックグラウンド色

@@ -1,0 +1,168 @@
+/*
+
+アイコンフォントのスタイルです。
+
+*/
+
+// 生成したアイコンフォントを読み込む
+@font-face {
+  font-family: 'icon-font';
+  src: url('/fonts/icon-font.eot?1712881457');
+  src:
+    url('/fonts/icon-font.eot?#iefix') format('eot'),
+    url('/fonts/icon-font.woff?1712881457') format('woff'),
+    url('/fonts/icon-font.ttf?1712881457') format('truetype'),
+    url('/fonts/icon-font.svg#icon-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+// アイコンフォントの共通スタイル
+:where(.icon-font) {
+  display: inline-block;
+  font-family: 'icon-font';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// アイコンフォントを表示する疑似要素
+.icon-font-arrow_bottom:before {
+  content: '\EA01';
+}
+.icon-font-arrow_left:before {
+  content: '\EA02';
+}
+.icon-font-arrow_right:before {
+  content: '\EA03';
+}
+.icon-font-arrow_top:before {
+  content: '\EA04';
+}
+.icon-font-bag:before {
+  content: '\EA05';
+}
+.icon-font-calendar:before {
+  content: '\EA06';
+}
+.icon-font-check:before {
+  content: '\EA07';
+}
+.icon-font-clock:before {
+  content: '\EA08';
+}
+.icon-font-copy:before {
+  content: '\EA09';
+}
+.icon-font-cross:before {
+  content: '\EA0A';
+}
+.icon-font-cross2:before {
+  content: '\EA0B';
+}
+.icon-font-document:before {
+  content: '\EA0C';
+}
+.icon-font-dot_3:before {
+  content: '\EA0D';
+}
+.icon-font-download:before {
+  content: '\EA0E';
+}
+.icon-font-dust_box:before {
+  content: '\EA0F';
+}
+.icon-font-exclamation:before {
+  content: '\EA10';
+}
+.icon-font-file_checked:before {
+  content: '\EA11';
+}
+.icon-font-line_icon:before {
+  content: '\EA12';
+}
+.icon-font-log_out:before {
+  content: '\EA13';
+}
+.icon-font-mail:before {
+  content: '\EA14';
+}
+.icon-font-minus_circle:before {
+  content: '\EA15';
+}
+.icon-font-next_window:before {
+  content: '\EA16';
+}
+.icon-font-pen:before {
+  content: '\EA17';
+}
+.icon-font-personality:before {
+  content: '\EA18';
+}
+.icon-font-plus:before {
+  content: '\EA19';
+}
+.icon-font-save:before {
+  content: '\EA1A';
+}
+.icon-font-search:before {
+  content: '\EA1B';
+}
+.icon-font-setting:before {
+  content: '\EA1C';
+}
+.icon-font-triangle_right:before {
+  content: '\EA1D';
+}
+.icon-font-update:before {
+  content: '\EA1E';
+}
+.icon-font-upload:before {
+  content: '\EA1F';
+}
+.icon-font-upload_2:before {
+  content: '\EA20';
+}
+.icon-font-user:before {
+  content: '\EA21';
+}
+
+// unicode変数
+$iconFonts: (
+  'arrow_bottom': \EA01,
+  'arrow_left': \EA02,
+  'arrow_right': \EA03,
+  'arrow_top': \EA04,
+  'bag': \EA05,
+  'calendar': \EA06,
+  'check': \EA07,
+  'clock': \EA08,
+  'copy': \EA09,
+  'cross': \EA0A,
+  'cross2': \EA0B,
+  'document': \EA0C,
+  'dot_3': \EA0D,
+  'download': \EA0E,
+  'dust_box': \EA0F,
+  'exclamation': \EA10,
+  'file_checked': \EA11,
+  'line_icon': \EA12,
+  'log_out': \EA13,
+  'mail': \EA14,
+  'minus_circle': \EA15,
+  'next_window': \EA16,
+  'pen': \EA17,
+  'personality': \EA18,
+  'plus': \EA19,
+  'save': \EA1A,
+  'search': \EA1B,
+  'setting': \EA1C,
+  'triangle_right': \EA1D,
+  'update': \EA1E,
+  'upload': \EA1F,
+  'upload_2': \EA20,
+  'user': \EA21,
+) !default;

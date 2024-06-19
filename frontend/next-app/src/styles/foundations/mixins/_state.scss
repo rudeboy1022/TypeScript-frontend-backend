@@ -1,0 +1,30 @@
+/**
+ * 親セレクターの状態でスタイルを分岐させるmixin
+ * 
+ * @usage
+ * @include state('.c-button', '.-red') {
+ *  ここにスタイルを記述
+ * }
+*/
+
+@use 'src/styles/foundations/functions/is-inside' as *;
+@use 'src/styles/foundations/functions/parent' as *;
+
+@mixin state($target, $state) {
+  //ネストの外か内を判定
+  @if is-inside($target) {
+    @at-root #{selector-replace(&, $target, $target + $state)} {
+      @content;
+    }
+  } @else {
+    @if $target == parent(#{&}) {
+      @at-root #{selector-replace(&, parent(#{&}), $target + $state)} {
+        @content;
+      }
+    } @else {
+      @at-root #{selector-replace(&, parent(#{&}), $target + $state + " " + parent(#{&}))} {
+        @content;
+      }
+    }
+  }
+}

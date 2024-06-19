@@ -1,0 +1,8 @@
+// 変数やmixinなどを使用したい場合は以下のように読み込む
+// @use '/src/styles/global' as *;
+// もしくは↓
+// @use 'global' as *;
+
+@forward 'foundations/variables';
+@forward 'foundations/functions';
+@forward 'foundations/mixins';

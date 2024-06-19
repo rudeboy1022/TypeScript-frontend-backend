@@ -1,0 +1,121 @@
+@use "src/styles/global" as *;
+
+//サイトのベーススタイルを定義しています。
+//modern-css-reset.cssをベースとして作成しています。
+
+/* Document
+ * ========================================================================== */
+
+/**
+ * 1. iOSの自動文字調整を防止する
+ * 2. ChromeとFirefoxの文字のレンダリングを合わせる
+ */
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%; /* 1 */
+  -webkit-font-smoothing: antialiased; /* 2 */
+  -moz-osx-font-smoothing: grayscale; /* 2 */
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+body {
+  width: 100%;
+  font-family: $font-family-noto-sans-base;
+  color: $color-text-1;
+  margin: 0;
+}
+
+/**
+ * 1. デフォルト余白すべて削除
+ */
+*,
+::before,
+::after {
+  margin: 0; /* 1 */
+}
+
+/* Sections
+* ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+/* anchor
+* ========================================================================== */
+a {
+  color: $color-text-1;
+  text-decoration: underline;
+  cursor: pointer;
+  @include hover() {
+    text-decoration: underline;
+  }
+}
+
+/* Grouping content
+* ========================================================================== */
+
+ul,
+ol {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Embedded content
+ * ========================================================================== */
+
+/**
+ * 1. デフォルトの謎余白を削除
+ * 2. 画像の画面突き抜け防止
+ */
+img {
+  vertical-align: bottom; /* 1 */
+  max-width: 100%; /* 2 */
+  height: auto;
+}
+
+/* Forms
+ * ========================================================================== */
+
+/**
+ * 1. bodyからfont-familyを継承する
+ * 2. フォントサイズをベースに合わせる
+ */
+input,
+button,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 1em; /* 2 */
+  margin: 0;
+}
+
+/**
+ * ボタンのデフォルトスタイルはリセットしておく
+ */
+:where(button) {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

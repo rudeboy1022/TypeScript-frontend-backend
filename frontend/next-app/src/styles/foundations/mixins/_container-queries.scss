@@ -1,0 +1,26 @@
+/**
+コンテナクエリのmixin: α版
+
+@usage
+@include container-min-screen('md') {
+ ここにスタイルを記述
+}
+
+親要素に以下のプロパティが必須
+container-type: inline-size;
+
+*/
+
+@use '../functions/screen' as *;
+
+@mixin container-min-screen($min) {
+  @container (min-width: #{screen($min)}) {
+    @content;
+  }
+}
+
+@mixin container-max-screen($max) {
+  @container (max-width: #{screen($max)}) {
+    @content;
+  }
+}

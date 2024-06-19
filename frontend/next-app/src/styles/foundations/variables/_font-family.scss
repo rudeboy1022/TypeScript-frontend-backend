@@ -1,0 +1,23 @@
+// TODO: 本来は'next/font/google'で読み込みたいが、日本語フォントをそれで読み込むと無限ロードの不具合が発生するので、仕方なくcss側で呼ぶ
+
+//https://fonts.google.com/specimen/Noto+Sans+JP
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+//https://fonts.google.com/specimen/Paytone+One?preview.size=24&preview.text_type=alphabet
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+
+//どのデバイスでも安定したフォント表示するフォントファミリーセット
+$font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+  'Hiragino Sans', Meiryo, sans-serif !default;
+
+//一部に明朝を使用したい場合に使用するフォントファミリーセット
+$font-family-mincho: 'Noto Serif JP', serif !default;
+
+//日本語はNoto Sans JPをベースとしたフォントファミリーセット
+$font-family-noto-sans-base: 'Noto Sans JP', 'Helvetica Neue', Arial,
+  'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif !default;
+
+//一部にZen Maru Gothicを使用したい場合に使用するフォントファミリーセット
+$font-family-zen-maru-Gothic: 'Zen Maru Gothic', serif !default;
+
+$font-family-hiragino: 'Hiragino Sans', serif !default;

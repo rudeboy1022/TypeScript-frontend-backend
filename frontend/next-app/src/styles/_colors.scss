@@ -1,0 +1,71 @@
+$background-lightest: white;
+$background-lighter: #f7f7f7;
+$background-darker: #2d60a7;
+
+$text-darker: #2d60a7;
+$text-neutral: #222222;
+$text-lightest: #ffffff;
+
+$exam-type-keys: 'character', 'behavior', 'motivation', 'values', 'mental',
+  'mentality', 'culture', 'workplace';
+$exam-types: (
+  'character': #c04f70,
+  'behavior': #387892,
+  'motivation': #eeb94b,
+  'values': #467f6d,
+  'mentality': #2e61a7,
+  'mental': #2e61a7,
+  'culture': #696156,
+  'workplace': #555,
+);
+
+$character-base-type-keys: 'P', 'A', 'I', 'D';
+$character-base-type: (
+  'P': #c04f70,
+  'A': #387892,
+  'I': #eeb94b,
+  'D': #467f6d,
+);
+$character-bg-type: (
+  'P': #fcf4f6,
+  'A': #e9f0f3,
+  'I': #fef8ed,
+  'D': #eef5f3,
+);
+
+$behavior-keys: 'achievement', 'peace', 'information', 'appearance',
+  'efficiency';
+$behavior: (
+  'achievement': #c04f70,
+  'peace': #387892,
+  'information': #eeb94b,
+  'appearance': #467f6d,
+  'efficiency': #696156,
+);
+
+$values-keys: 'stability', 'management', 'challenge', 'specialty';
+$values: (
+  'stability': #c04f70,
+  'management': #387892,
+  'challenge': #eeb94b,
+  'specialty': #467f6d,
+);
+
+$motivation-keys: 'reward', 'relationship', 'hardwork', 'worthDoing',
+  'privateLife';
+$motivation: (
+  'reward': #c04f70,
+  'relationship': #387892,
+  'hardwork': #eeb94b,
+  'worthDoing': #467f6d,
+  'privateLife': #696156,
+);
+
+$mentality-keys: 'depression', 'asperger', 'adhd', 'honesty', 'mentalhealth';
+$mentality: (
+  'depression': #c04f70,
+  'asperger': #387892,
+  'adhd': #eeb94b,
+  'honesty': #467f6d,
+  'mentalhealth': #2d60a7,
+);
